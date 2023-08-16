@@ -1,5 +1,9 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
 
+// 載入bootstrap scss
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
-@import './pages/index.scss';
+@import 'base';
+@import './layout/aside';
+@import './layout/footer';
+
+@import './pages/admin';
