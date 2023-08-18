@@ -12,6 +12,22 @@
 
 .nav-link {
   padding: 12px 0;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #198754 !important;
+}
+
+.admin::before {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background: #198754;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  left: -20%;
 }
 
 .avatar {
@@ -19,4 +35,24 @@
   height: 40px;
   background: url(https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80) center/cover;
   border-radius: 50%;
+}
+
+.ft-md-dark {
+  color: #6C757D;
+}
+
+.fz-14 {
+  font-size: 14px;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.info {
+  a {
+    &:hover {
+      color: #198754;
+    }
+  }
 }
