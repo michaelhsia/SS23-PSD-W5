@@ -1,58 +1,57 @@
-.nav {
-  min-width: 296px;
-  min-height: 100vh;
-  padding: 32px 32px;
+.admin-title {
+  line-height: 1.375;
 }
 
-.logo {
-  width: 151px;
-  height: 40px;
-  margin-bottom: 20px;
+.hover-success {
+  &:hover {
+    color: $success !important;
+  }
 }
 
-.nav-link {
-  padding: 12px 0;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: #198754 !important;
-}
-
-.admin::before {
-  content: "";
-  width: 32px;
-  height: 4px;
-  background: #198754;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 50%;
-  left: -20%;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  background: url(https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80) center/cover;
-  border-radius: 50%;
-}
-
-.ft-md-dark {
-  color: #6C757D;
-}
-
-.fz-14 {
-  font-size: 14px;
-}
-
-.name {
-  margin-bottom: 0;
-}
-
-.info {
-  a {
-    &:hover {
-      color: #198754;
+table {
+  min-width: 984px;
+  margin-bottom: 64px !important;
+  thead {
+    tr {
+      border-bottom: 1px solid #212529 !important;
     }
+  }
+  tbody {
+    tr:hover {
+      td, th {
+        background: #F8F9FA !important;
+      }
+    }
+  }
+  td,th {
+    padding: 18px 0 !important;
+  }
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.admin-list {
+  padding: 32px;
+}
+
+nav {
+  li{
+    &:first-child, &:last-child{
+      a {
+        color: $success;
+        padding: 6px 4px 0 4px;
+      }
+    }
+  }
+}
+
+.page-link {
+  border: 1px solid $success;
+  &:hover {
+    border: 1px solid $success;
+    background: $success;
+    color: $white !important;
   }
 }
